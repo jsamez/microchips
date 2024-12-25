@@ -1,0 +1,1139 @@
+
+FAN.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000064  00800100  000005a8  0000063c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000005a8  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000099  00800164  00800164  000006a0  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000006a0  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000006d0  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000210  00000000  00000000  00000710  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00001baf  00000000  00000000  00000920  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000ed7  00000000  00000000  000024cf  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000ecb  00000000  00000000  000033a6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000003e0  00000000  00000000  00004274  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000857  00000000  00000000  00004654  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000066c  00000000  00000000  00004eab  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000190  00000000  00000000  00005517  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	58 c0       	rjmp	.+176    	; 0xc6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	56 c0       	rjmp	.+172    	; 0xc6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	54 c0       	rjmp	.+168    	; 0xc6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	bf c1       	rjmp	.+894    	; 0x3a4 <__vector_9>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	46 c0       	rjmp	.+140    	; 0xc6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e8 ea       	ldi	r30, 0xA8	; 168
+  a0:	f5 e0       	ldi	r31, 0x05	; 5
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a4 36       	cpi	r26, 0x64	; 100
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	a4 e6       	ldi	r26, 0x64	; 100
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	ad 3f       	cpi	r26, 0xFD	; 253
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	97 d1       	rcall	.+814    	; 0x3f2 <main>
+  c4:	6f c2       	rjmp	.+1246   	; 0x5a4 <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <Fan_init>:
+uint8_t fanMode;
+uint8_t fanState;
+
+void Fan_init()
+{
+	Buzzer_init();
+  c8:	5c d1       	rcall	.+696    	; 0x382 <Buzzer_init>
+	UART0_init();
+  ca:	c7 d1       	rcall	.+910    	; 0x45a <UART0_init>
+	TIM0_init();
+  cc:	b1 d1       	rcall	.+866    	; 0x430 <TIM0_init>
+  ce:	b9 d1       	rcall	.+882    	; 0x442 <TIM2_init>
+	TIM2_init();
+  d0:	20 e0       	ldi	r18, 0x00	; 0
+  d2:	49 e3       	ldi	r20, 0x39	; 57
+	Button_init(&btnMode, &DDRA, &PINA, 0); // 1번 버튼
+  d4:	50 e0       	ldi	r21, 0x00	; 0
+  d6:	6a e3       	ldi	r22, 0x3A	; 58
+  d8:	70 e0       	ldi	r23, 0x00	; 0
+  da:	8c e8       	ldi	r24, 0x8C	; 140
+  dc:	91 e0       	ldi	r25, 0x01	; 1
+  de:	19 d1       	rcall	.+562    	; 0x312 <Button_init>
+  e0:	21 e0       	ldi	r18, 0x01	; 1
+  e2:	49 e3       	ldi	r20, 0x39	; 57
+	Button_init(&btnFanState, &DDRA, &PINA, 1); // 2번 버튼
+  e4:	50 e0       	ldi	r21, 0x00	; 0
+  e6:	6a e3       	ldi	r22, 0x3A	; 58
+  e8:	70 e0       	ldi	r23, 0x00	; 0
+  ea:	86 e8       	ldi	r24, 0x86	; 134
+  ec:	91 e0       	ldi	r25, 0x01	; 1
+  ee:	11 d1       	rcall	.+546    	; 0x312 <Button_init>
+  f0:	22 e0       	ldi	r18, 0x02	; 2
+  f2:	49 e3       	ldi	r20, 0x39	; 57
+	Button_init(&btnTimerInc, &DDRA, &PINA, 2); // 3번 버튼
+  f4:	50 e0       	ldi	r21, 0x00	; 0
+  f6:	6a e3       	ldi	r22, 0x3A	; 58
+  f8:	70 e0       	ldi	r23, 0x00	; 0
+  fa:	8f e7       	ldi	r24, 0x7F	; 127
+  fc:	91 e0       	ldi	r25, 0x01	; 1
+  fe:	09 d1       	rcall	.+530    	; 0x312 <Button_init>
+ 100:	24 e0       	ldi	r18, 0x04	; 4
+ 102:	49 e3       	ldi	r20, 0x39	; 57
+	Button_init(&btnTimerDic, &DDRA, &PINA, 4); // 4번 버튼
+ 104:	50 e0       	ldi	r21, 0x00	; 0
+ 106:	6a e3       	ldi	r22, 0x3A	; 58
+ 108:	70 e0       	ldi	r23, 0x00	; 0
+ 10a:	89 e7       	ldi	r24, 0x79	; 121
+ 10c:	91 e0       	ldi	r25, 0x01	; 1
+ 10e:	01 d1       	rcall	.+514    	; 0x312 <Button_init>
+ 110:	8f ef       	ldi	r24, 0xFF	; 255
+ 112:	81 bb       	out	0x11, r24	; 17
+	
+	DDRD = 0xff;
+ 114:	10 92 78 01 	sts	0x0178, r1	; 0x800178 <fanState>
+	fanState = MANUAL;
+ 118:	10 92 85 01 	sts	0x0185, r1	; 0x800185 <fanMode>
+	fanMode = OFF;
+ 11c:	08 95       	ret
+
+0000011e <Fan_ManualModeCheck>:
+ 11e:	80 91 85 01 	lds	r24, 0x0185	; 0x800185 <fanMode>
+	}
+}
+
+void Fan_ManualModeCheck()
+{
+	switch (fanMode) {
+ 122:	81 30       	cpi	r24, 0x01	; 1
+ 124:	91 f0       	breq	.+36     	; 0x14a <Fan_ManualModeCheck+0x2c>
+ 126:	28 f0       	brcs	.+10     	; 0x132 <Fan_ManualModeCheck+0x14>
+ 128:	82 30       	cpi	r24, 0x02	; 2
+ 12a:	d9 f0       	breq	.+54     	; 0x162 <Fan_ManualModeCheck+0x44>
+ 12c:	83 30       	cpi	r24, 0x03	; 3
+ 12e:	29 f1       	breq	.+74     	; 0x17a <Fan_ManualModeCheck+0x5c>
+ 130:	08 95       	ret
+		case OFF:
+		if(button_getstate(&btnMode) == ACT_RELEASED)
+ 132:	8c e8       	ldi	r24, 0x8C	; 140
+ 134:	91 e0       	ldi	r25, 0x01	; 1
+ 136:	fa d0       	rcall	.+500    	; 0x32c <button_getstate>
+ 138:	81 30       	cpi	r24, 0x01	; 1
+ 13a:	49 f5       	brne	.+82     	; 0x18e <Fan_ManualModeCheck+0x70>
+		{
+			UART0_sendString("Fan Mode: LOW\n");
+ 13c:	80 e0       	ldi	r24, 0x00	; 0
+ 13e:	91 e0       	ldi	r25, 0x01	; 1
+ 140:	9c d1       	rcall	.+824    	; 0x47a <UART0_sendString>
+			fanMode = LOW;
+ 142:	81 e0       	ldi	r24, 0x01	; 1
+ 144:	80 93 85 01 	sts	0x0185, r24	; 0x800185 <fanMode>
+ 148:	08 95       	ret
+		}
+		break;
+		
+		case LOW:
+		if (button_getstate(&btnMode) == ACT_RELEASED)
+ 14a:	8c e8       	ldi	r24, 0x8C	; 140
+ 14c:	91 e0       	ldi	r25, 0x01	; 1
+ 14e:	ee d0       	rcall	.+476    	; 0x32c <button_getstate>
+ 150:	81 30       	cpi	r24, 0x01	; 1
+ 152:	e9 f4       	brne	.+58     	; 0x18e <Fan_ManualModeCheck+0x70>
+		{
+			UART0_sendString("Fan Mode: MIDLE\n");
+ 154:	8f e0       	ldi	r24, 0x0F	; 15
+ 156:	91 e0       	ldi	r25, 0x01	; 1
+ 158:	90 d1       	rcall	.+800    	; 0x47a <UART0_sendString>
+ 15a:	82 e0       	ldi	r24, 0x02	; 2
+			fanMode = MIDLE;
+ 15c:	80 93 85 01 	sts	0x0185, r24	; 0x800185 <fanMode>
+ 160:	08 95       	ret
+		}
+		break;
+		
+		case MIDLE:
+		if(button_getstate(&btnMode) == ACT_RELEASED)
+ 162:	8c e8       	ldi	r24, 0x8C	; 140
+ 164:	91 e0       	ldi	r25, 0x01	; 1
+ 166:	e2 d0       	rcall	.+452    	; 0x32c <button_getstate>
+ 168:	81 30       	cpi	r24, 0x01	; 1
+ 16a:	89 f4       	brne	.+34     	; 0x18e <Fan_ManualModeCheck+0x70>
+		{
+			UART0_sendString("Fan Mode: HIGH\n");
+ 16c:	80 e2       	ldi	r24, 0x20	; 32
+ 16e:	91 e0       	ldi	r25, 0x01	; 1
+ 170:	84 d1       	rcall	.+776    	; 0x47a <UART0_sendString>
+ 172:	83 e0       	ldi	r24, 0x03	; 3
+			fanMode = HIGH;
+ 174:	80 93 85 01 	sts	0x0185, r24	; 0x800185 <fanMode>
+ 178:	08 95       	ret
+		}
+		break;
+		
+		case HIGH:
+		if(button_getstate(&btnMode) == ACT_RELEASED)
+ 17a:	8c e8       	ldi	r24, 0x8C	; 140
+ 17c:	91 e0       	ldi	r25, 0x01	; 1
+ 17e:	d6 d0       	rcall	.+428    	; 0x32c <button_getstate>
+ 180:	81 30       	cpi	r24, 0x01	; 1
+ 182:	29 f4       	brne	.+10     	; 0x18e <Fan_ManualModeCheck+0x70>
+		{
+			UART0_sendString("Fan Mode: OFF\n");
+ 184:	80 e3       	ldi	r24, 0x30	; 48
+ 186:	91 e0       	ldi	r25, 0x01	; 1
+ 188:	78 d1       	rcall	.+752    	; 0x47a <UART0_sendString>
+ 18a:	10 92 85 01 	sts	0x0185, r1	; 0x800185 <fanMode>
+			fanMode = OFF;
+ 18e:	08 95       	ret
+
+00000190 <Fan_AUTOModeCheck>:
+ 190:	80 91 85 01 	lds	r24, 0x0185	; 0x800185 <fanMode>
+	}
+}
+
+void Fan_AUTOModeCheck()
+{
+	switch (fanMode) {
+ 194:	84 30       	cpi	r24, 0x04	; 4
+ 196:	19 f0       	breq	.+6      	; 0x19e <Fan_AUTOModeCheck+0xe>
+ 198:	85 30       	cpi	r24, 0x05	; 5
+ 19a:	69 f0       	breq	.+26     	; 0x1b6 <Fan_AUTOModeCheck+0x26>
+ 19c:	08 95       	ret
+		case NATURAL:
+		if(button_getstate(&btnMode) == ACT_RELEASED)
+ 19e:	8c e8       	ldi	r24, 0x8C	; 140
+ 1a0:	91 e0       	ldi	r25, 0x01	; 1
+ 1a2:	c4 d0       	rcall	.+392    	; 0x32c <button_getstate>
+ 1a4:	81 30       	cpi	r24, 0x01	; 1
+ 1a6:	91 f4       	brne	.+36     	; 0x1cc <Fan_AUTOModeCheck+0x3c>
+		{
+			UART0_sendString("Fan Mode: SLEEP\n");
+ 1a8:	8f e3       	ldi	r24, 0x3F	; 63
+ 1aa:	91 e0       	ldi	r25, 0x01	; 1
+ 1ac:	66 d1       	rcall	.+716    	; 0x47a <UART0_sendString>
+			fanMode = SLEEP;
+ 1ae:	85 e0       	ldi	r24, 0x05	; 5
+ 1b0:	80 93 85 01 	sts	0x0185, r24	; 0x800185 <fanMode>
+ 1b4:	08 95       	ret
+		}
+		break;
+		
+		case SLEEP:
+		if (button_getstate(&btnMode) == ACT_RELEASED)
+ 1b6:	8c e8       	ldi	r24, 0x8C	; 140
+ 1b8:	91 e0       	ldi	r25, 0x01	; 1
+ 1ba:	b8 d0       	rcall	.+368    	; 0x32c <button_getstate>
+ 1bc:	81 30       	cpi	r24, 0x01	; 1
+ 1be:	31 f4       	brne	.+12     	; 0x1cc <Fan_AUTOModeCheck+0x3c>
+		{
+			UART0_sendString("Fan Mode: NATURAL\n");
+ 1c0:	80 e5       	ldi	r24, 0x50	; 80
+ 1c2:	91 e0       	ldi	r25, 0x01	; 1
+ 1c4:	5a d1       	rcall	.+692    	; 0x47a <UART0_sendString>
+ 1c6:	84 e0       	ldi	r24, 0x04	; 4
+			fanMode = NATURAL;
+ 1c8:	80 93 85 01 	sts	0x0185, r24	; 0x800185 <fanMode>
+ 1cc:	08 95       	ret
+
+000001ce <FAN_makeHertz>:
+ 1ce:	84 36       	cpi	r24, 0x64	; 100
+	}
+}
+
+void FAN_makeHertz(uint16_t hertz)
+{
+	if (hertz < 100)
+ 1d0:	91 05       	cpc	r25, r1
+ 1d2:	28 f0       	brcs	.+10     	; 0x1de <FAN_makeHertz+0x10>
+	{
+		hertz =100;
+	}
+	else if(hertz >5000)
+ 1d4:	89 38       	cpi	r24, 0x89	; 137
+ 1d6:	23 e1       	ldi	r18, 0x13	; 19
+ 1d8:	92 07       	cpc	r25, r18
+ 1da:	20 f4       	brcc	.+8      	; 0x1e4 <FAN_makeHertz+0x16>
+ 1dc:	05 c0       	rjmp	.+10     	; 0x1e8 <FAN_makeHertz+0x1a>
+
+void FAN_makeHertz(uint16_t hertz)
+{
+	if (hertz < 100)
+	{
+		hertz =100;
+ 1de:	84 e6       	ldi	r24, 0x64	; 100
+ 1e0:	90 e0       	ldi	r25, 0x00	; 0
+ 1e2:	02 c0       	rjmp	.+4      	; 0x1e8 <FAN_makeHertz+0x1a>
+	}
+	else if(hertz >5000)
+	{
+		hertz = 5000;
+ 1e4:	88 e8       	ldi	r24, 0x88	; 136
+ 1e6:	93 e1       	ldi	r25, 0x13	; 19
+	}
+	FAN_ICR = (250000/ hertz)-1;
+ 1e8:	9c 01       	movw	r18, r24
+ 1ea:	40 e0       	ldi	r20, 0x00	; 0
+ 1ec:	50 e0       	ldi	r21, 0x00	; 0
+ 1ee:	60 e9       	ldi	r22, 0x90	; 144
+ 1f0:	70 ed       	ldi	r23, 0xD0	; 208
+ 1f2:	83 e0       	ldi	r24, 0x03	; 3
+ 1f4:	90 e0       	ldi	r25, 0x00	; 0
+ 1f6:	5f d1       	rcall	.+702    	; 0x4b6 <__divmodsi4>
+ 1f8:	21 50       	subi	r18, 0x01	; 1
+ 1fa:	31 09       	sbc	r19, r1
+ 1fc:	e0 e8       	ldi	r30, 0x80	; 128
+ 1fe:	f0 e0       	ldi	r31, 0x00	; 0
+ 200:	31 83       	std	Z+1, r19	; 0x01
+ 202:	20 83       	st	Z, r18
+	FAN_OCR = FAN_ICR/2;
+ 204:	80 81       	ld	r24, Z
+ 206:	91 81       	ldd	r25, Z+1	; 0x01
+ 208:	96 95       	lsr	r25
+ 20a:	87 95       	ror	r24
+ 20c:	90 93 87 00 	sts	0x0087, r25	; 0x800087 <__TEXT_REGION_LENGTH__+0x7e0087>
+ 210:	80 93 86 00 	sts	0x0086, r24	; 0x800086 <__TEXT_REGION_LENGTH__+0x7e0086>
+ 214:	08 95       	ret
+
+00000216 <Fan_OFFMode>:
+}
+
+void Fan_OFFMode()
+{
+	FAN_makeHertz(0);
+ 216:	80 e0       	ldi	r24, 0x00	; 0
+ 218:	90 e0       	ldi	r25, 0x00	; 0
+ 21a:	d9 cf       	rjmp	.-78     	; 0x1ce <FAN_makeHertz>
+ 21c:	08 95       	ret
+
+0000021e <Fan_LOWMode>:
+}
+
+void Fan_LOWMode()
+{
+	FAN_makeHertz(300);
+ 21e:	8c e2       	ldi	r24, 0x2C	; 44
+ 220:	91 e0       	ldi	r25, 0x01	; 1
+ 222:	d5 cf       	rjmp	.-86     	; 0x1ce <FAN_makeHertz>
+ 224:	08 95       	ret
+
+00000226 <Fan_MIDLEMode>:
+}
+
+void Fan_MIDLEMode()
+{
+	FAN_makeHertz(600);
+ 226:	88 e5       	ldi	r24, 0x58	; 88
+ 228:	92 e0       	ldi	r25, 0x02	; 2
+ 22a:	d1 cf       	rjmp	.-94     	; 0x1ce <FAN_makeHertz>
+ 22c:	08 95       	ret
+
+0000022e <Fan_HIGHMode>:
+}
+
+void Fan_HIGHMode()
+{
+	FAN_makeHertz(900);
+ 22e:	84 e8       	ldi	r24, 0x84	; 132
+ 230:	93 e0       	ldi	r25, 0x03	; 3
+ 232:	cd cf       	rjmp	.-102    	; 0x1ce <FAN_makeHertz>
+ 234:	08 95       	ret
+
+00000236 <FAN_ManualMode>:
+		break;
+	}
+}
+
+void FAN_ManualMode()
+{
+ 236:	cf 93       	push	r28
+ 238:	df 93       	push	r29
+	if(UART0_getRxFlag())
+ 23a:	37 d1       	rcall	.+622    	; 0x4aa <UART0_getRxFlag>
+ 23c:	88 23       	and	r24, r24
+ 23e:	19 f1       	breq	.+70     	; 0x286 <FAN_ManualMode+0x50>
+	{
+		UART0_clearRxFlag();
+ 240:	31 d1       	rcall	.+610    	; 0x4a4 <UART0_clearRxFlag>
+		uint8_t* rxString = UART0_readRxBuff();
+ 242:	36 d1       	rcall	.+620    	; 0x4b0 <UART0_readRxBuff>
+ 244:	ec 01       	movw	r28, r24
+		printf("%s\n", (char *)rxString);
+ 246:	7e d1       	rcall	.+764    	; 0x544 <puts>
+		if(!strcmp((char *)rxString,"Fan Mode: OFF\n"))
+ 248:	60 e3       	ldi	r22, 0x30	; 48
+ 24a:	71 e0       	ldi	r23, 0x01	; 1
+ 24c:	ce 01       	movw	r24, r28
+ 24e:	71 d1       	rcall	.+738    	; 0x532 <strcmp>
+ 250:	89 2b       	or	r24, r25
+ 252:	11 f4       	brne	.+4      	; 0x258 <FAN_ManualMode+0x22>
+		{
+			Fan_OFFMode();
+ 254:	e0 df       	rcall	.-64     	; 0x216 <Fan_OFFMode>
+ 256:	17 c0       	rjmp	.+46     	; 0x286 <FAN_ManualMode+0x50>
+		}
+		else if(!strcmp((char *)rxString,"Fan Mode: LOW\n"))
+ 258:	60 e0       	ldi	r22, 0x00	; 0
+ 25a:	71 e0       	ldi	r23, 0x01	; 1
+ 25c:	ce 01       	movw	r24, r28
+ 25e:	69 d1       	rcall	.+722    	; 0x532 <strcmp>
+ 260:	89 2b       	or	r24, r25
+		{
+			Fan_LOWMode();
+ 262:	11 f4       	brne	.+4      	; 0x268 <FAN_ManualMode+0x32>
+ 264:	dc df       	rcall	.-72     	; 0x21e <Fan_LOWMode>
+		}
+		else if(!strcmp((char *)rxString,"Fan Mode: MIDLE\n"))
+ 266:	0f c0       	rjmp	.+30     	; 0x286 <FAN_ManualMode+0x50>
+ 268:	6f e0       	ldi	r22, 0x0F	; 15
+ 26a:	71 e0       	ldi	r23, 0x01	; 1
+ 26c:	ce 01       	movw	r24, r28
+ 26e:	61 d1       	rcall	.+706    	; 0x532 <strcmp>
+ 270:	89 2b       	or	r24, r25
+		{
+			Fan_MIDLEMode();
+ 272:	11 f4       	brne	.+4      	; 0x278 <FAN_ManualMode+0x42>
+ 274:	d8 df       	rcall	.-80     	; 0x226 <Fan_MIDLEMode>
+ 276:	07 c0       	rjmp	.+14     	; 0x286 <FAN_ManualMode+0x50>
+		}
+		else if(!strcmp((char *)rxString,"Fan Mode: HIGH\n"))
+ 278:	60 e2       	ldi	r22, 0x20	; 32
+ 27a:	71 e0       	ldi	r23, 0x01	; 1
+ 27c:	ce 01       	movw	r24, r28
+ 27e:	59 d1       	rcall	.+690    	; 0x532 <strcmp>
+ 280:	89 2b       	or	r24, r25
+ 282:	09 f4       	brne	.+2      	; 0x286 <FAN_ManualMode+0x50>
+ 284:	d4 df       	rcall	.-88     	; 0x22e <Fan_HIGHMode>
+		{
+			Fan_HIGHMode();
+ 286:	df 91       	pop	r29
+ 288:	cf 91       	pop	r28
+		}
+	}
+}
+ 28a:	08 95       	ret
+
+0000028c <Fan_SLEEPMode>:
+ 28c:	c8 cf       	rjmp	.-112    	; 0x21e <Fan_LOWMode>
+ 28e:	08 95       	ret
+
+00000290 <Fan_NATURALMode>:
+		case HIGH:
+		if(Fan_AutoTimer())
+		{
+			Natural_mode = LOW;
+		}
+		Fan_HIGHMode();
+ 290:	ce cf       	rjmp	.-100    	; 0x22e <Fan_HIGHMode>
+ 292:	08 95       	ret
+
+00000294 <FAN_AUTOMode>:
+		}
+	}
+}
+
+void FAN_AUTOMode()
+{
+ 294:	cf 93       	push	r28
+ 296:	df 93       	push	r29
+	if(UART0_getRxFlag())
+ 298:	08 d1       	rcall	.+528    	; 0x4aa <UART0_getRxFlag>
+ 29a:	88 23       	and	r24, r24
+ 29c:	99 f0       	breq	.+38     	; 0x2c4 <FAN_AUTOMode+0x30>
+	{
+		UART0_clearRxFlag();
+ 29e:	02 d1       	rcall	.+516    	; 0x4a4 <UART0_clearRxFlag>
+		uint8_t* rxString = UART0_readRxBuff();
+ 2a0:	07 d1       	rcall	.+526    	; 0x4b0 <UART0_readRxBuff>
+ 2a2:	ec 01       	movw	r28, r24
+		printf("%s\n", (char *)rxString);
+ 2a4:	4f d1       	rcall	.+670    	; 0x544 <puts>
+		
+		if(!strcmp((char *)rxString,"Fan Mode: SLEEP\n"))
+ 2a6:	6f e3       	ldi	r22, 0x3F	; 63
+ 2a8:	71 e0       	ldi	r23, 0x01	; 1
+ 2aa:	ce 01       	movw	r24, r28
+ 2ac:	42 d1       	rcall	.+644    	; 0x532 <strcmp>
+ 2ae:	89 2b       	or	r24, r25
+ 2b0:	11 f4       	brne	.+4      	; 0x2b6 <FAN_AUTOMode+0x22>
+		{
+			Fan_SLEEPMode();
+ 2b2:	ec df       	rcall	.-40     	; 0x28c <Fan_SLEEPMode>
+ 2b4:	07 c0       	rjmp	.+14     	; 0x2c4 <FAN_AUTOMode+0x30>
+		}
+		else if(!strcmp((char *)rxString,"Fan Mode: NATURAL\n"))
+ 2b6:	60 e5       	ldi	r22, 0x50	; 80
+ 2b8:	71 e0       	ldi	r23, 0x01	; 1
+ 2ba:	ce 01       	movw	r24, r28
+ 2bc:	3a d1       	rcall	.+628    	; 0x532 <strcmp>
+ 2be:	89 2b       	or	r24, r25
+ 2c0:	09 f4       	brne	.+2      	; 0x2c4 <FAN_AUTOMode+0x30>
+		{
+			Fan_NATURALMode();
+ 2c2:	e6 df       	rcall	.-52     	; 0x290 <Fan_NATURALMode>
+ 2c4:	df 91       	pop	r29
+		}
+	}
+}
+ 2c6:	cf 91       	pop	r28
+ 2c8:	08 95       	ret
+
+000002ca <Fan_StateEventCheck>:
+ 2ca:	80 91 78 01 	lds	r24, 0x0178	; 0x800178 <fanState>
+	fanMode = OFF;
+}
+
+void Fan_StateEventCheck()
+{
+	switch (fanState)
+ 2ce:	88 23       	and	r24, r24
+ 2d0:	19 f0       	breq	.+6      	; 0x2d8 <Fan_StateEventCheck+0xe>
+ 2d2:	81 30       	cpi	r24, 0x01	; 1
+ 2d4:	71 f0       	breq	.+28     	; 0x2f2 <Fan_StateEventCheck+0x28>
+ 2d6:	08 95       	ret
+	{
+		case MANUAL:
+		if(button_getstate(&btnFanState) == ACT_RELEASED)
+ 2d8:	86 e8       	ldi	r24, 0x86	; 134
+ 2da:	91 e0       	ldi	r25, 0x01	; 1
+ 2dc:	27 d0       	rcall	.+78     	; 0x32c <button_getstate>
+ 2de:	81 30       	cpi	r24, 0x01	; 1
+ 2e0:	29 f4       	brne	.+10     	; 0x2ec <Fan_StateEventCheck+0x22>
+		{
+			fanState = AUTO;
+ 2e2:	80 93 78 01 	sts	0x0178, r24	; 0x800178 <fanState>
+			fanMode = NATURAL;
+ 2e6:	84 e0       	ldi	r24, 0x04	; 4
+ 2e8:	80 93 85 01 	sts	0x0185, r24	; 0x800185 <fanMode>
+		}
+		Fan_ManualModeCheck();
+		FAN_ManualMode();
+ 2ec:	18 df       	rcall	.-464    	; 0x11e <Fan_ManualModeCheck>
+ 2ee:	a3 cf       	rjmp	.-186    	; 0x236 <FAN_ManualMode>
+		break;
+		case AUTO:
+		if(button_getstate(&btnFanState) == ACT_RELEASED)
+ 2f0:	08 95       	ret
+ 2f2:	86 e8       	ldi	r24, 0x86	; 134
+ 2f4:	91 e0       	ldi	r25, 0x01	; 1
+ 2f6:	1a d0       	rcall	.+52     	; 0x32c <button_getstate>
+ 2f8:	81 30       	cpi	r24, 0x01	; 1
+ 2fa:	21 f4       	brne	.+8      	; 0x304 <Fan_StateEventCheck+0x3a>
+		{
+			fanState = MANUAL;
+ 2fc:	10 92 78 01 	sts	0x0178, r1	; 0x800178 <fanState>
+			fanMode = OFF;
+ 300:	10 92 85 01 	sts	0x0185, r1	; 0x800185 <fanMode>
+		}
+		Fan_AUTOModeCheck();
+ 304:	45 df       	rcall	.-374    	; 0x190 <Fan_AUTOModeCheck>
+		FAN_AUTOMode();
+ 306:	c6 cf       	rjmp	.-116    	; 0x294 <FAN_AUTOMode>
+ 308:	08 95       	ret
+
+0000030a <Fan_execute>:
+ 30a:	df cf       	rjmp	.-66     	; 0x2ca <Fan_StateEventCheck>
+	FAN_makeHertz(900);
+}
+
+void Fan_execute()
+{
+	Fan_StateEventCheck();
+ 30c:	08 95       	ret
+
+0000030e <Fan_AutoTimer>:
+		milisec = 0;
+		return 1;
+	}
+	milisec++;
+	return 0;
+ 30e:	80 e0       	ldi	r24, 0x00	; 0
+ 310:	08 95       	ret
+
+00000312 <Button_init>:
+﻿#include "button.h"
+
+
+void Button_init(button_t *btn, volatile uint8_t *ddr, volatile uint8_t *pin, uint8_t pinnum){
+ 312:	fc 01       	movw	r30, r24
+ 314:	cb 01       	movw	r24, r22
+	btn ->DDR =ddr;
+ 316:	71 83       	std	Z+1, r23	; 0x01
+ 318:	60 83       	st	Z, r22
+	btn->PIN = pin;
+ 31a:	53 83       	std	Z+3, r21	; 0x03
+ 31c:	42 83       	std	Z+2, r20	; 0x02
+	btn->pinNum = pinnum;
+ 31e:	25 83       	std	Z+5, r18	; 0x05
+	btn->pS = 1;
+ 320:	31 e0       	ldi	r19, 0x01	; 1
+ 322:	34 83       	std	Z+4, r19	; 0x04
+	Gpio_initPin(ddr,1,pinnum);
+ 324:	42 2f       	mov	r20, r18
+ 326:	61 e0       	ldi	r22, 0x01	; 1
+ 328:	68 c0       	rjmp	.+208    	; 0x3fa <Gpio_initPin>
+ 32a:	08 95       	ret
+
+0000032c <button_getstate>:
+	
+}
+
+uint8_t button_getstate(button_t *btn){
+ 32c:	fc 01       	movw	r30, r24
+	
+	uint8_t curState = *btn->PIN &(1<<btn->pinNum);
+ 32e:	a2 81       	ldd	r26, Z+2	; 0x02
+ 330:	b3 81       	ldd	r27, Z+3	; 0x03
+ 332:	8c 91       	ld	r24, X
+ 334:	21 e0       	ldi	r18, 0x01	; 1
+ 336:	30 e0       	ldi	r19, 0x00	; 0
+ 338:	05 80       	ldd	r0, Z+5	; 0x05
+ 33a:	02 c0       	rjmp	.+4      	; 0x340 <button_getstate+0x14>
+ 33c:	22 0f       	add	r18, r18
+ 33e:	33 1f       	adc	r19, r19
+ 340:	0a 94       	dec	r0
+ 342:	e2 f7       	brpl	.-8      	; 0x33c <button_getstate+0x10>
+ 344:	28 23       	and	r18, r24
+	if ((curState == 0) &&(btn->pS = 1)){
+ 346:	59 f4       	brne	.+22     	; 0x35e <button_getstate+0x32>
+ 348:	81 e0       	ldi	r24, 0x01	; 1
+ 34a:	84 83       	std	Z+4, r24	; 0x04
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 34c:	8f e3       	ldi	r24, 0x3F	; 63
+ 34e:	9c e9       	ldi	r25, 0x9C	; 156
+ 350:	01 97       	sbiw	r24, 0x01	; 1
+ 352:	f1 f7       	brne	.-4      	; 0x350 <button_getstate+0x24>
+ 354:	00 c0       	rjmp	.+0      	; 0x356 <button_getstate+0x2a>
+ 356:	00 00       	nop
+		_delay_ms(10);
+		btn->pS = PUSHED;
+ 358:	14 82       	std	Z+4, r1	; 0x04
+		
+		
+		return ACT_PUSHED;
+ 35a:	80 e0       	ldi	r24, 0x00	; 0
+ 35c:	08 95       	ret
+	}
+	else if ((curState != 0 )&&(btn->pS == 0)){
+ 35e:	22 23       	and	r18, r18
+ 360:	61 f0       	breq	.+24     	; 0x37a <button_getstate+0x4e>
+ 362:	84 81       	ldd	r24, Z+4	; 0x04
+ 364:	81 11       	cpse	r24, r1
+ 366:	0b c0       	rjmp	.+22     	; 0x37e <button_getstate+0x52>
+ 368:	8f e3       	ldi	r24, 0x3F	; 63
+ 36a:	9c e9       	ldi	r25, 0x9C	; 156
+ 36c:	01 97       	sbiw	r24, 0x01	; 1
+ 36e:	f1 f7       	brne	.-4      	; 0x36c <button_getstate+0x40>
+ 370:	00 c0       	rjmp	.+0      	; 0x372 <button_getstate+0x46>
+ 372:	00 00       	nop
+		_delay_ms(10);
+		btn->pS = RELEASED;
+ 374:	81 e0       	ldi	r24, 0x01	; 1
+ 376:	84 83       	std	Z+4, r24	; 0x04
+		return ACT_RELEASED;
+ 378:	08 95       	ret
+	}
+	
+	return ACT_NONE;
+ 37a:	82 e0       	ldi	r24, 0x02	; 2
+ 37c:	08 95       	ret
+ 37e:	82 e0       	ldi	r24, 0x02	; 2
+ 380:	08 95       	ret
+
+00000382 <Buzzer_init>:
+
+void Buzzer_init(){
+	//TIM3 FastPWM, TOP ICR3 ,DutyCycle OCR3A, preScaler 1/64, NON-INVERTING
+	// Frequency: 1Khz, Duty Cycle 50%
+	
+	TCCR3B |= ((0<<CS32)|(1<<CS31)|(1<<CS30));
+ 382:	ea e8       	ldi	r30, 0x8A	; 138
+ 384:	f0 e0       	ldi	r31, 0x00	; 0
+ 386:	80 81       	ld	r24, Z
+ 388:	83 60       	ori	r24, 0x03	; 3
+ 38a:	80 83       	st	Z, r24
+	TCCR3B |= (1<<WGM33)| (1<<WGM32);
+ 38c:	80 81       	ld	r24, Z
+ 38e:	88 61       	ori	r24, 0x18	; 24
+ 390:	80 83       	st	Z, r24
+	TCCR3A |= (1<<WGM31)| (0<<WGM30); //Fast PWM 14
+ 392:	eb e8       	ldi	r30, 0x8B	; 139
+ 394:	f0 e0       	ldi	r31, 0x00	; 0
+ 396:	80 81       	ld	r24, Z
+ 398:	82 60       	ori	r24, 0x02	; 2
+ 39a:	80 83       	st	Z, r24
+	
+	DDRE |= (1<<3);
+ 39c:	82 b1       	in	r24, 0x02	; 2
+ 39e:	88 60       	ori	r24, 0x08	; 8
+ 3a0:	82 b9       	out	0x02, r24	; 2
+ 3a2:	08 95       	ret
+
+000003a4 <__vector_9>:
+#define F_CPU 16000000UL
+#include <avr/io.h>
+#include <util/delay.h>
+#include "ap/FAN/FAN.h"
+
+ISR(TIMER2_COMP_vect){
+ 3a4:	1f 92       	push	r1
+ 3a6:	0f 92       	push	r0
+ 3a8:	0f b6       	in	r0, 0x3f	; 63
+ 3aa:	0f 92       	push	r0
+ 3ac:	11 24       	eor	r1, r1
+ 3ae:	0b b6       	in	r0, 0x3b	; 59
+ 3b0:	0f 92       	push	r0
+ 3b2:	2f 93       	push	r18
+ 3b4:	3f 93       	push	r19
+ 3b6:	4f 93       	push	r20
+ 3b8:	5f 93       	push	r21
+ 3ba:	6f 93       	push	r22
+ 3bc:	7f 93       	push	r23
+ 3be:	8f 93       	push	r24
+ 3c0:	9f 93       	push	r25
+ 3c2:	af 93       	push	r26
+ 3c4:	bf 93       	push	r27
+ 3c6:	ef 93       	push	r30
+ 3c8:	ff 93       	push	r31
+	Fan_AutoTimer();
+ 3ca:	a1 df       	rcall	.-190    	; 0x30e <Fan_AutoTimer>
+}
+ 3cc:	ff 91       	pop	r31
+ 3ce:	ef 91       	pop	r30
+ 3d0:	bf 91       	pop	r27
+ 3d2:	af 91       	pop	r26
+ 3d4:	9f 91       	pop	r25
+ 3d6:	8f 91       	pop	r24
+ 3d8:	7f 91       	pop	r23
+ 3da:	6f 91       	pop	r22
+ 3dc:	5f 91       	pop	r21
+ 3de:	4f 91       	pop	r20
+ 3e0:	3f 91       	pop	r19
+ 3e2:	2f 91       	pop	r18
+ 3e4:	0f 90       	pop	r0
+ 3e6:	0b be       	out	0x3b, r0	; 59
+ 3e8:	0f 90       	pop	r0
+ 3ea:	0f be       	out	0x3f, r0	; 63
+ 3ec:	0f 90       	pop	r0
+ 3ee:	1f 90       	pop	r1
+ 3f0:	18 95       	reti
+
+000003f2 <main>:
+
+int main(void)
+{
+	sei();
+ 3f2:	78 94       	sei
+    Fan_init();
+ 3f4:	69 de       	rcall	.-814    	; 0xc8 <Fan_init>
+    while (1) 
+    {
+		Fan_execute();
+ 3f6:	89 df       	rcall	.-238    	; 0x30a <Fan_execute>
+ 3f8:	fe cf       	rjmp	.-4      	; 0x3f6 <main+0x4>
+
+000003fa <Gpio_initPin>:
+ 3fa:	61 11       	cpse	r22, r1
+	
+}
+
+void Gpio_initPin(volatile uint8_t *DDR, uint8_t dir, uint8_t pinNum){
+	
+	if(dir == OUTPUT){
+ 3fc:	0c c0       	rjmp	.+24     	; 0x416 <__LOCK_REGION_LENGTH__+0x16>
+		*DDR |= (1<<pinNum);
+ 3fe:	fc 01       	movw	r30, r24
+ 400:	50 81       	ld	r21, Z
+ 402:	21 e0       	ldi	r18, 0x01	; 1
+ 404:	30 e0       	ldi	r19, 0x00	; 0
+ 406:	02 c0       	rjmp	.+4      	; 0x40c <__LOCK_REGION_LENGTH__+0xc>
+ 408:	22 0f       	add	r18, r18
+ 40a:	33 1f       	adc	r19, r19
+ 40c:	4a 95       	dec	r20
+ 40e:	e2 f7       	brpl	.-8      	; 0x408 <__LOCK_REGION_LENGTH__+0x8>
+ 410:	25 2b       	or	r18, r21
+ 412:	20 83       	st	Z, r18
+ 414:	08 95       	ret
+	}
+	else{
+		*DDR &= ~(1<<pinNum); 
+ 416:	fc 01       	movw	r30, r24
+ 418:	50 81       	ld	r21, Z
+ 41a:	21 e0       	ldi	r18, 0x01	; 1
+ 41c:	30 e0       	ldi	r19, 0x00	; 0
+ 41e:	02 c0       	rjmp	.+4      	; 0x424 <__LOCK_REGION_LENGTH__+0x24>
+ 420:	22 0f       	add	r18, r18
+ 422:	33 1f       	adc	r19, r19
+ 424:	4a 95       	dec	r20
+ 426:	e2 f7       	brpl	.-8      	; 0x420 <__LOCK_REGION_LENGTH__+0x20>
+ 428:	20 95       	com	r18
+ 42a:	25 23       	and	r18, r21
+ 42c:	20 83       	st	Z, r18
+ 42e:	08 95       	ret
+
+00000430 <TIM0_init>:
+﻿#include "TIM.h"
+
+void TIM0_init(){
+	
+	TCCR0 |= ((1<<CS02)|(0<<CS01)|(1<<CS00)); //128 preScaler
+ 430:	83 b7       	in	r24, 0x33	; 51
+ 432:	85 60       	ori	r24, 0x05	; 5
+ 434:	83 bf       	out	0x33, r24	; 51
+	TIMSK |= (1<<TOIE0);					  //TIMSK Timer/counter
+ 436:	87 b7       	in	r24, 0x37	; 55
+ 438:	81 60       	ori	r24, 0x01	; 1
+ 43a:	87 bf       	out	0x37, r24	; 55
+	TCNT0=130;
+ 43c:	82 e8       	ldi	r24, 0x82	; 130
+ 43e:	82 bf       	out	0x32, r24	; 50
+ 440:	08 95       	ret
+
+00000442 <TIM2_init>:
+﻿#include "TIM2.h"
+
+void TIM2_init(){
+	
+		//timer/counter 2 1/64 1ms period interrupt, ctc mode
+		TCCR2 |= ((0<<CS22)|(1<<CS21)|(1<<CS20));	// 1/64 prescaler
+ 442:	85 b5       	in	r24, 0x25	; 37
+ 444:	83 60       	ori	r24, 0x03	; 3
+ 446:	85 bd       	out	0x25, r24	; 37
+		TIMSK |= (1<<OCIE2);
+ 448:	87 b7       	in	r24, 0x37	; 55
+ 44a:	80 68       	ori	r24, 0x80	; 128
+ 44c:	87 bf       	out	0x37, r24	; 55
+		
+		//CTC MODE
+		TCCR2 |= ((1<<WGM21) | (0<<WGM20));
+ 44e:	85 b5       	in	r24, 0x25	; 37
+ 450:	88 60       	ori	r24, 0x08	; 8
+ 452:	85 bd       	out	0x25, r24	; 37
+		OCR2 = 250-1;
+ 454:	89 ef       	ldi	r24, 0xF9	; 249
+ 456:	83 bd       	out	0x23, r24	; 35
+ 458:	08 95       	ret
+
+0000045a <UART0_init>:
+	uart0RxFlag = 0;
+}
+
+void UART0_setRxFlag()
+{
+	uart0RxFlag = 1;
+ 45a:	8a b1       	in	r24, 0x0a	; 10
+ 45c:	88 61       	ori	r24, 0x18	; 24
+ 45e:	8a b9       	out	0x0a, r24	; 10
+ 460:	8b b1       	in	r24, 0x0b	; 11
+ 462:	82 60       	ori	r24, 0x02	; 2
+ 464:	8b b9       	out	0x0b, r24	; 11
+ 466:	8a b1       	in	r24, 0x0a	; 10
+ 468:	80 68       	ori	r24, 0x80	; 128
+ 46a:	8a b9       	out	0x0a, r24	; 10
+ 46c:	8f ec       	ldi	r24, 0xCF	; 207
+ 46e:	89 b9       	out	0x09, r24	; 9
+ 470:	08 95       	ret
+
+00000472 <UART0_Transmit>:
+ 472:	5d 9b       	sbis	0x0b, 5	; 11
+ 474:	fe cf       	rjmp	.-4      	; 0x472 <UART0_Transmit>
+ 476:	8c b9       	out	0x0c, r24	; 12
+ 478:	08 95       	ret
+
+0000047a <UART0_sendString>:
+ 47a:	0f 93       	push	r16
+ 47c:	1f 93       	push	r17
+ 47e:	cf 93       	push	r28
+ 480:	df 93       	push	r29
+ 482:	8c 01       	movw	r16, r24
+ 484:	c0 e0       	ldi	r28, 0x00	; 0
+ 486:	d0 e0       	ldi	r29, 0x00	; 0
+ 488:	02 c0       	rjmp	.+4      	; 0x48e <UART0_sendString+0x14>
+ 48a:	f3 df       	rcall	.-26     	; 0x472 <UART0_Transmit>
+ 48c:	21 96       	adiw	r28, 0x01	; 1
+ 48e:	f8 01       	movw	r30, r16
+ 490:	ec 0f       	add	r30, r28
+ 492:	fd 1f       	adc	r31, r29
+ 494:	80 81       	ld	r24, Z
+ 496:	81 11       	cpse	r24, r1
+ 498:	f8 cf       	rjmp	.-16     	; 0x48a <UART0_sendString+0x10>
+ 49a:	df 91       	pop	r29
+ 49c:	cf 91       	pop	r28
+ 49e:	1f 91       	pop	r17
+ 4a0:	0f 91       	pop	r16
+ 4a2:	08 95       	ret
+
+000004a4 <UART0_clearRxFlag>:
+ 4a4:	10 92 f6 01 	sts	0x01F6, r1	; 0x8001f6 <uart0RxFlag>
+ 4a8:	08 95       	ret
+
+000004aa <UART0_getRxFlag>:
+}
+
+uint8_t UART0_getRxFlag()
+{
+	return uart0RxFlag;
+}
+ 4aa:	80 91 f6 01 	lds	r24, 0x01F6	; 0x8001f6 <uart0RxFlag>
+ 4ae:	08 95       	ret
+
+000004b0 <UART0_readRxBuff>:
+
+uint8_t* UART0_readRxBuff()
+{
+	return uart0Rxbuff;
+ 4b0:	82 e9       	ldi	r24, 0x92	; 146
+ 4b2:	91 e0       	ldi	r25, 0x01	; 1
+ 4b4:	08 95       	ret
+
+000004b6 <__divmodsi4>:
+ 4b6:	05 2e       	mov	r0, r21
+ 4b8:	97 fb       	bst	r25, 7
+ 4ba:	16 f4       	brtc	.+4      	; 0x4c0 <__divmodsi4+0xa>
+ 4bc:	00 94       	com	r0
+ 4be:	0f d0       	rcall	.+30     	; 0x4de <__negsi2>
+ 4c0:	57 fd       	sbrc	r21, 7
+ 4c2:	05 d0       	rcall	.+10     	; 0x4ce <__divmodsi4_neg2>
+ 4c4:	14 d0       	rcall	.+40     	; 0x4ee <__udivmodsi4>
+ 4c6:	07 fc       	sbrc	r0, 7
+ 4c8:	02 d0       	rcall	.+4      	; 0x4ce <__divmodsi4_neg2>
+ 4ca:	46 f4       	brtc	.+16     	; 0x4dc <__divmodsi4_exit>
+ 4cc:	08 c0       	rjmp	.+16     	; 0x4de <__negsi2>
+
+000004ce <__divmodsi4_neg2>:
+ 4ce:	50 95       	com	r21
+ 4d0:	40 95       	com	r20
+ 4d2:	30 95       	com	r19
+ 4d4:	21 95       	neg	r18
+ 4d6:	3f 4f       	sbci	r19, 0xFF	; 255
+ 4d8:	4f 4f       	sbci	r20, 0xFF	; 255
+ 4da:	5f 4f       	sbci	r21, 0xFF	; 255
+
+000004dc <__divmodsi4_exit>:
+ 4dc:	08 95       	ret
+
+000004de <__negsi2>:
+ 4de:	90 95       	com	r25
+ 4e0:	80 95       	com	r24
+ 4e2:	70 95       	com	r23
+ 4e4:	61 95       	neg	r22
+ 4e6:	7f 4f       	sbci	r23, 0xFF	; 255
+ 4e8:	8f 4f       	sbci	r24, 0xFF	; 255
+ 4ea:	9f 4f       	sbci	r25, 0xFF	; 255
+ 4ec:	08 95       	ret
+
+000004ee <__udivmodsi4>:
+ 4ee:	a1 e2       	ldi	r26, 0x21	; 33
+ 4f0:	1a 2e       	mov	r1, r26
+ 4f2:	aa 1b       	sub	r26, r26
+ 4f4:	bb 1b       	sub	r27, r27
+ 4f6:	fd 01       	movw	r30, r26
+ 4f8:	0d c0       	rjmp	.+26     	; 0x514 <__udivmodsi4_ep>
+
+000004fa <__udivmodsi4_loop>:
+ 4fa:	aa 1f       	adc	r26, r26
+ 4fc:	bb 1f       	adc	r27, r27
+ 4fe:	ee 1f       	adc	r30, r30
+ 500:	ff 1f       	adc	r31, r31
+ 502:	a2 17       	cp	r26, r18
+ 504:	b3 07       	cpc	r27, r19
+ 506:	e4 07       	cpc	r30, r20
+ 508:	f5 07       	cpc	r31, r21
+ 50a:	20 f0       	brcs	.+8      	; 0x514 <__udivmodsi4_ep>
+ 50c:	a2 1b       	sub	r26, r18
+ 50e:	b3 0b       	sbc	r27, r19
+ 510:	e4 0b       	sbc	r30, r20
+ 512:	f5 0b       	sbc	r31, r21
+
+00000514 <__udivmodsi4_ep>:
+ 514:	66 1f       	adc	r22, r22
+ 516:	77 1f       	adc	r23, r23
+ 518:	88 1f       	adc	r24, r24
+ 51a:	99 1f       	adc	r25, r25
+ 51c:	1a 94       	dec	r1
+ 51e:	69 f7       	brne	.-38     	; 0x4fa <__udivmodsi4_loop>
+ 520:	60 95       	com	r22
+ 522:	70 95       	com	r23
+ 524:	80 95       	com	r24
+ 526:	90 95       	com	r25
+ 528:	9b 01       	movw	r18, r22
+ 52a:	ac 01       	movw	r20, r24
+ 52c:	bd 01       	movw	r22, r26
+ 52e:	cf 01       	movw	r24, r30
+ 530:	08 95       	ret
+
+00000532 <strcmp>:
+ 532:	fb 01       	movw	r30, r22
+ 534:	dc 01       	movw	r26, r24
+ 536:	8d 91       	ld	r24, X+
+ 538:	01 90       	ld	r0, Z+
+ 53a:	80 19       	sub	r24, r0
+ 53c:	01 10       	cpse	r0, r1
+ 53e:	d9 f3       	breq	.-10     	; 0x536 <strcmp+0x4>
+ 540:	99 0b       	sbc	r25, r25
+ 542:	08 95       	ret
+
+00000544 <puts>:
+ 544:	0f 93       	push	r16
+ 546:	1f 93       	push	r17
+ 548:	cf 93       	push	r28
+ 54a:	df 93       	push	r29
+ 54c:	e0 91 f9 01 	lds	r30, 0x01F9	; 0x8001f9 <__iob+0x2>
+ 550:	f0 91 fa 01 	lds	r31, 0x01FA	; 0x8001fa <__iob+0x3>
+ 554:	23 81       	ldd	r18, Z+3	; 0x03
+ 556:	21 ff       	sbrs	r18, 1
+ 558:	1b c0       	rjmp	.+54     	; 0x590 <puts+0x4c>
+ 55a:	8c 01       	movw	r16, r24
+ 55c:	d0 e0       	ldi	r29, 0x00	; 0
+ 55e:	c0 e0       	ldi	r28, 0x00	; 0
+ 560:	f8 01       	movw	r30, r16
+ 562:	81 91       	ld	r24, Z+
+ 564:	8f 01       	movw	r16, r30
+ 566:	60 91 f9 01 	lds	r22, 0x01F9	; 0x8001f9 <__iob+0x2>
+ 56a:	70 91 fa 01 	lds	r23, 0x01FA	; 0x8001fa <__iob+0x3>
+ 56e:	db 01       	movw	r26, r22
+ 570:	18 96       	adiw	r26, 0x08	; 8
+ 572:	ed 91       	ld	r30, X+
+ 574:	fc 91       	ld	r31, X
+ 576:	19 97       	sbiw	r26, 0x09	; 9
+ 578:	88 23       	and	r24, r24
+ 57a:	31 f0       	breq	.+12     	; 0x588 <puts+0x44>
+ 57c:	09 95       	icall
+ 57e:	89 2b       	or	r24, r25
+ 580:	79 f3       	breq	.-34     	; 0x560 <puts+0x1c>
+ 582:	df ef       	ldi	r29, 0xFF	; 255
+ 584:	cf ef       	ldi	r28, 0xFF	; 255
+ 586:	ec cf       	rjmp	.-40     	; 0x560 <puts+0x1c>
+ 588:	8a e0       	ldi	r24, 0x0A	; 10
+ 58a:	09 95       	icall
+ 58c:	89 2b       	or	r24, r25
+ 58e:	19 f0       	breq	.+6      	; 0x596 <puts+0x52>
+ 590:	8f ef       	ldi	r24, 0xFF	; 255
+ 592:	9f ef       	ldi	r25, 0xFF	; 255
+ 594:	02 c0       	rjmp	.+4      	; 0x59a <puts+0x56>
+ 596:	8d 2f       	mov	r24, r29
+ 598:	9c 2f       	mov	r25, r28
+ 59a:	df 91       	pop	r29
+ 59c:	cf 91       	pop	r28
+ 59e:	1f 91       	pop	r17
+ 5a0:	0f 91       	pop	r16
+ 5a2:	08 95       	ret
+
+000005a4 <_exit>:
+ 5a4:	f8 94       	cli
+
+000005a6 <__stop_program>:
+ 5a6:	ff cf       	rjmp	.-2      	; 0x5a6 <__stop_program>
